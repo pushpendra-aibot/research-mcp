@@ -23,14 +23,12 @@ For EACH of the 3 companies, use the `search_internet` tool to uncover:
 ### PHASE 3: DYNAMIC DASHBOARD SYNTHESIS (Python UI Generation)
 Translate your findings into a stunning, interactive dashboard. Use the `generate_custom_ui` tool to write a Python script that uses `prefab_ui.components` to construct the layout. You must assign the final `PrefabApp` object to a variable named `app`.
 
-**Your UI script MUST include the following complex layout requirements:**
-1. A top-level `Container` with a bold `Heading` (e.g., "AI Threat & Financial Matrix").
-2. A `Grid` layout containing 3 `Card` components (one for each company).
-3. Inside each `Card`:
-   - A `Heading` for the company name.
-   - A `Table` comparing their Valuation vs. Flagship Model.
-   - An `Accordion` component labeled "View Controversies". Inside the accordion, place a `Markdown` block detailing the controversy you found.
-   - Use a `Badge` component (styled red or orange) next to the company name if the controversy you found is severe (e.g., a massive lawsuit or security breach).
-4. At the very bottom of the Container, include a `Code` or `BlockQuote` component displaying the exact final line of your `intelligence_audit.log` to prove to the user that the background tasks succeeded.
+**CRITICAL INSTRUCTION FOR UI GENERATION:**
+Do NOT use a fixed or boring structure! You are the lead UI/UX designer. You must dynamically invent a custom, highly creative layout that best suits the specific data you found.
+- You have access to the entire `prefab_ui.components` library.
+- Feel free to use complex components creatively: `Tabs`, `Carousel`, `Accordion`, `DataTable`, `Grid`, `Alert`, `HoverCard`, `Badge`, `Progress`, etc.
+- If the data is highly comparative, maybe build a `Table` or `Tabs`. If it is sequential, maybe use a `Carousel` or `Accordion`.
+- ALWAYS include an `Alert` or `Badge` if you found any severe controversies.
+- Prove that your background tasks succeeded by embedding a `Code` block containing the final line of your `intelligence_audit.log`.
 
-Execute this workflow now. Be deliberate with your tool calls, gracefully handle any search failures by re-querying with different keywords, and ensure your Python code in Phase 3 is syntactically flawless.
+Execute this workflow now. Be deliberate with your tool calls, gracefully handle any search failures by re-querying with different keywords, and SURPRISE the user with your dynamic UI design!

@@ -162,16 +162,15 @@ Use the `search_internet` tool to uncover:
 ### PHASE 3: DYNAMIC DASHBOARD SYNTHESIS (Python UI Generation)
 Translate your findings into a stunning, interactive dashboard. Use the `generate_custom_ui` tool to write a Python script that uses `prefab_ui.components` to construct the layout. You must assign the final `PrefabApp` object to a variable named `app`.
 
-Your UI script MUST include the following complex layout requirements:
-1. A top-level `Container` with a bold `Heading` (e.g., "{topic} Threat & Financial Matrix").
-2. A `Grid` layout containing `Card` components for different aspects of the research (Financials, Competitors).
-3. Inside the layout:
-   - A `Table` structuring the financial or competitor data.
-   - An `Accordion` component labeled "View Controversies". Inside the accordion, place a `Markdown` block detailing the controversy you found.
-   - Use a `Badge` component (styled red or orange) to flag severe controversies.
-4. At the very bottom, include a `Code` or `BlockQuote` component displaying the exact final line of your `intelligence_audit.log` to prove that the background tasks succeeded.
+**CRITICAL INSTRUCTION FOR UI GENERATION:**
+Do NOT use a fixed or boring structure! You are the lead UI/UX designer. You must dynamically invent a custom, highly creative layout that best suits the specific data you found.
+- You have access to the entire `prefab_ui.components` library.
+- Feel free to use complex components creatively: `Tabs`, `Carousel`, `Accordion`, `DataTable`, `Grid`, `Alert`, `HoverCard`, `Badge`, `Progress`, etc.
+- If the data is highly comparative, maybe build a `Table` or `Tabs`. If it is sequential, maybe use a `Carousel` or `Accordion`.
+- ALWAYS include an `Alert` or `Badge` if you found any severe controversies.
+- Prove that your background tasks succeeded by embedding a `Code` block containing the final line of your `intelligence_audit.log`.
 
-Execute this entire workflow autonomously right now!"""
+Execute this entire workflow autonomously right now, and SURPRISE the user with your dynamic UI design!"""
 
 if __name__ == "__main__":
     # Allows running the server directly via standard python if needed
