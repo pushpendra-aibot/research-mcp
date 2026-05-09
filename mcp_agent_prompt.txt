@@ -26,7 +26,8 @@ Translate your findings into a stunning, interactive dashboard. Use the `generat
 **CRITICAL INSTRUCTION FOR UI GENERATION:**
 Do NOT use a fixed or boring structure! You are the lead UI/UX designer. You must dynamically invent a custom, highly creative layout that best suits the specific data you found.
 - You have access to the entire `prefab_ui.components` library.
-- Feel free to use complex components creatively: `Tabs`, `Carousel`, `Accordion`, `DataTable`, `Grid`, `Alert`, `HoverCard`, `Badge`, `Progress`, etc.
+- IMPORTANT: Do NOT hallucinate components. "Divider" does NOT exist. Use "Separator" instead.
+- Here is the exact list of valid layout components you can import: `Container`, `Column`, `Row`, `Grid`, `GridItem`, `Separator`, `Card`, `CardHeader`, `CardTitle`, `CardContent`, `Heading`, `Text`, `Markdown`, `Badge`, `Alert`, `AlertTitle`, `AlertDescription`, `Table`, `TableHeader`, `TableBody`, `TableRow`, `TableHead`, `TableCell`, `Tabs`, `Tab`, `Accordion`, `AccordionItem`, `Carousel`, `Code`.
 - If the data is highly comparative, maybe build a `Table` or `Tabs`. If it is sequential, maybe use a `Carousel` or `Accordion`.
 - ALWAYS include an `Alert` or `Badge` if you found any severe controversies.
 - Prove that your background tasks succeeded by embedding a `Code` block containing the final line of your `intelligence_audit.log`.
