@@ -17,7 +17,7 @@ The MCP server equips the AI with three powerful tools and one dynamic prompt:
 ### 🛠️ Tools
 1. **`search_internet(query: str)`**: Leverages the [Tavily Search API](https://tavily.com/) to uncover real-time facts, financial data, and news across the web.
 2. **`manage_local_file(action, filepath, content)`**: Provides full local CRUD capabilities, allowing the agent to automatically write markdown reports, parse data files, and maintain running audit logs.
-3. **`generate_custom_ui(python_code: str)`**: **(The 2000-Point Feature!)** Instead of using static UI templates, the agent writes pure Python scripts utilizing `prefab-ui` components. The server executes this code in a sandbox and renders interactive components (Tables, Accordions, Grids, Badges, etc.) dynamically directly inside the chat interface!
+3. **`generate_custom_ui(python_code: str)`**: Instead of using static UI templates, the agent writes pure Python scripts utilizing `prefab-ui` components. The server executes this code in a sandbox and renders interactive components (Tables, Accordions, Grids, Badges, etc.) dynamically directly inside the chat interface!
 
 ### 🎯 Prompts
 - **`/deep_research`**: Users simply provide a single topic (e.g., "Tesla" or "OpenAI"). The server injects a massive set of instructions guiding the agent to perform an intelligence audit, write local threat matrices, and build a beautiful UI dashboard summarizing the findings.
