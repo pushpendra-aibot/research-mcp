@@ -1,3 +1,5 @@
+![Research MCP Header](header.png)
+
 # 🚀 Dynamic Prefab-UI FastMCP Server
 
 Welcome to the **Research MCP**! This repository hosts an advanced **Model Context Protocol (MCP)** server built in Python using **FastMCP** and **Prefab-UI**. 
