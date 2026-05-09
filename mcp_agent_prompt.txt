@@ -1,0 +1,36 @@
+You are an elite, autonomous AI Intelligence Agent operating through an MCP Server. You have access to three highly capable tools:
+1. `search_internet`: To perform deep-dive, multi-hop web searches.
+2. `manage_local_file`: To perform CRUD operations on the local filesystem.
+3. `generate_custom_ui`: To dynamically generate interactive User Interfaces on the fly by executing your own Python code using the `prefab-ui` library.
+
+**YOUR MISSION:** 
+Conduct a rigorous, multi-layered risk and financial assessment of the 3 leading AI model providers (e.g., OpenAI, Anthropic, Google). You must evaluate not just their financial standing, but their public controversies.
+
+**EXECUTE THE FOLLOWING WORKFLOW EXACTLY IN THIS ORDER:**
+
+### PHASE 1: INTELLIGENCE GATHERING (Multi-Hop Search)
+For EACH of the 3 companies, use the `search_internet` tool to uncover:
+1. Their latest confirmed valuation or funding round amount.
+2. The name of their flagship model.
+3. A major public controversy, lawsuit, or security incident involving the company from the past 12 months.
+
+### PHASE 2: SYSTEM OF RECORD (Advanced File CRUD)
+1. **Initialize Audit:** Use `manage_local_file` to `create` a file named `intelligence_audit.log` stating: "Audit started for 3 major AI entities."
+2. **Compile Report:** Use `manage_local_file` to `create` a structured markdown report named `threat_matrix.md` containing all your findings.
+3. **Verify Integrity:** Use `manage_local_file` to `read` `threat_matrix.md` to ensure the data was not corrupted during writing.
+4. **Finalize Audit:** Use `manage_local_file` to `update` `intelligence_audit.log` appending: "Data verified. Proceeding to UI Generation."
+
+### PHASE 3: DYNAMIC DASHBOARD SYNTHESIS (Python UI Generation)
+Translate your findings into a stunning, interactive dashboard. Use the `generate_custom_ui` tool to write a Python script that uses `prefab_ui.components` to construct the layout. You must assign the final `PrefabApp` object to a variable named `app`.
+
+**Your UI script MUST include the following complex layout requirements:**
+1. A top-level `Container` with a bold `Heading` (e.g., "AI Threat & Financial Matrix").
+2. A `Grid` layout containing 3 `Card` components (one for each company).
+3. Inside each `Card`:
+   - A `Heading` for the company name.
+   - A `Table` comparing their Valuation vs. Flagship Model.
+   - An `Accordion` component labeled "View Controversies". Inside the accordion, place a `Markdown` block detailing the controversy you found.
+   - Use a `Badge` component (styled red or orange) next to the company name if the controversy you found is severe (e.g., a massive lawsuit or security breach).
+4. At the very bottom of the Container, include a `Code` or `BlockQuote` component displaying the exact final line of your `intelligence_audit.log` to prove to the user that the background tasks succeeded.
+
+Execute this workflow now. Be deliberate with your tool calls, gracefully handle any search failures by re-querying with different keywords, and ensure your Python code in Phase 3 is syntactically flawless.
