@@ -7,7 +7,7 @@ Welcome to the **Research MCP**! This repository hosts an advanced **Model Conte
 This server acts as a robust backend for AI Agents (like Claude Desktop), giving them the autonomous ability to perform multi-hop web research, conduct local file system management (CRUD), and most importantly, **generate dynamic, highly customized user interfaces on the fly**.
 
 <div align="center">
-  <h3>🔗 YouTube Demo: <a href="[Insert YouTube Link Here]">[Watch the Demo Here]</a></h3>
+  <h3>🔗 YouTube Demo: <a href="https://youtu.be/RT2NLiUfW9U">[Watch the Demo Here]</a></h3>
 </div>
 
 ---
